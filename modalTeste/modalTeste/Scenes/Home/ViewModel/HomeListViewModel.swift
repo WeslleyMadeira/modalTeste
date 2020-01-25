@@ -35,20 +35,17 @@ class HomeListViewModel: HomeListViewModelType {
     init(service: NetworkService) {
         self.service = service
         
+        requestRepositorties()
         bindData()
     }
     
     func bindData() {
-        requestPage.subscribe { [weak self] _ in
-            guard let `self` = self else {return}
-            self.requestRepositorties()
-        }.disposed(by: disposBag)
-        
         checkBootomView.subscribe(onNext: { [weak self] in
             guard let `self` = self else {return}
             if !self.isLoading.value {
                 self.isLoading.accept(true)
                 self.requestPage.accept( self.requestPage.value + 1 )
+                self.requestRepositorties()
             }
         }).disposed(by: disposBag)
     }
@@ -61,7 +58,7 @@ class HomeListViewModel: HomeListViewModelType {
             self.gitRepositories.accept(self.gitRepositories.value + repositories)
             self.isLoading.accept(false)
         }, onError: { (error) in
-            self.isLoading.accept(false)
+            self.requestPage.accept( self.requestPage.value - 1 )
         }).disposed(by: disposBag)
         
     }

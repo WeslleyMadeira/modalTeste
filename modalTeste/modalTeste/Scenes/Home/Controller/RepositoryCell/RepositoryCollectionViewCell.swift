@@ -11,7 +11,6 @@ import UIKit
 class RepositoryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var labelNameRepository: UILabel!
-    
     @IBOutlet weak var labelTitleAllStar: UILabel!
     @IBOutlet weak var labelCountStar: UILabel!
     
