@@ -39,6 +39,7 @@
 		E00903AE23DCAA9A00E886E5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A723DCAA8C00E886E5 /* Roboto-Regular.ttf */; };
 		E00903AF23DCAA9A00E886E5 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A623DCAA8C00E886E5 /* Roboto-Thin.ttf */; };
 		E00903B123DCC52800E886E5 /* EXDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00903B023DCC52800E886E5 /* EXDate.swift */; };
+		E00903B323DCD8D100E886E5 /* EXInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00903B223DCD8D100E886E5 /* EXInt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		E00903A823DCAA8C00E886E5 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		E00903A923DCAA8C00E886E5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		E00903B023DCC52800E886E5 /* EXDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDate.swift; sourceTree = "<group>"; };
+		E00903B223DCD8D100E886E5 /* EXInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXInt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +344,7 @@
 				E009039F23DCA75800E886E5 /* EXNavigationController.swift */,
 				E00903A123DCA79000E886E5 /* EXColor.swift */,
 				E00903B023DCC52800E886E5 /* EXDate.swift */,
+				E00903B223DCD8D100E886E5 /* EXInt.swift */,
 			);
 			path = Extesions;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				E009038223DB9C4E00E886E5 /* HomeListCoordinator.swift in Sources */,
 				E00903A223DCA79000E886E5 /* EXColor.swift in Sources */,
 				E009037B23DB9C0E00E886E5 /* HomeListViewController.swift in Sources */,
+				E00903B323DCD8D100E886E5 /* EXInt.swift in Sources */,
 				E009038A23DBA09700E886E5 /* NetworkService.swift in Sources */,
 				E009038023DB9C3000E886E5 /* Repository.swift in Sources */,
 				E009039123DBA17400E886E5 /* ApiRequest.swift in Sources */,

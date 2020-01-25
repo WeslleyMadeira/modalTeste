@@ -38,7 +38,9 @@ class HomeListViewController: UIViewController {
     
     func bindToViewModel() {
         viewModel?.repositorysDriver
-            .drive(collectionViewRepositorys.rx.items(cellIdentifier: "repositoryCollectionViewCell", cellType: RepositoryCollectionViewCell.self)) { collection , row , cell in
+            .drive(collectionViewRepositorys.rx.items(cellIdentifier: "repositoryCollectionViewCell", cellType: RepositoryCollectionViewCell.self)) { index , repository , cell in
+                cell.bindData(repository: repository, index: index)
+                
         }.disposed(by: disposeBag)
         
         collectionViewRepositorys.rx.contentOffset.subscribe {
@@ -74,10 +76,10 @@ class HomeListViewController: UIViewController {
 extension HomeListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width - 32, height: 140)
+        return CGSize(width: collectionView.frame.width - 16, height: 155)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+        return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     }
 }

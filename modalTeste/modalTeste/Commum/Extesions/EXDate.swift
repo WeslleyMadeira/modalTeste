@@ -14,7 +14,7 @@ extension Date {
     static func dateToNumberDays(date: String) -> Int {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        let date = dateFormatter.date(from: "2014-12-24T22:04:11Z")!
+        let date = dateFormatter.date(from: date)!
 
         let calendar = NSCalendar.current
         let dateToday = Date()
