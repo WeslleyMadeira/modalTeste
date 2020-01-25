@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,33 @@
 		B065D988B7D2B2D5880D1C86 /* Pods_modalTeste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570AC5EE68C97B378823601A /* Pods_modalTeste.framework */; };
 		E009034323DB7E7500E886E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009034223DB7E7500E886E5 /* AppDelegate.swift */; };
 		E009034523DB7E7500E886E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009034423DB7E7500E886E5 /* SceneDelegate.swift */; };
-		E009034723DB7E7500E886E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009034623DB7E7500E886E5 /* ViewController.swift */; };
-		E009034A23DB7E7500E886E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E009034823DB7E7500E886E5 /* Main.storyboard */; };
 		E009034C23DB7E7700E886E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E009034B23DB7E7700E886E5 /* Assets.xcassets */; };
 		E009034F23DB7E7700E886E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E009034D23DB7E7700E886E5 /* LaunchScreen.storyboard */; };
 		E009035A23DB7E7800E886E5 /* modalTesteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009035923DB7E7800E886E5 /* modalTesteTests.swift */; };
 		E009036523DB7E7800E886E5 /* modalTesteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009036423DB7E7800E886E5 /* modalTesteUITests.swift */; };
+		E009037B23DB9C0E00E886E5 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009037923DB9C0E00E886E5 /* HomeListViewController.swift */; };
+		E009037C23DB9C0E00E886E5 /* HomeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E009037A23DB9C0E00E886E5 /* HomeListViewController.xib */; };
+		E009037E23DB9C2400E886E5 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009037D23DB9C2400E886E5 /* HomeListViewModel.swift */; };
+		E009038023DB9C3000E886E5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009037F23DB9C3000E886E5 /* Repository.swift */; };
+		E009038223DB9C4E00E886E5 /* HomeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009038123DB9C4E00E886E5 /* HomeListCoordinator.swift */; };
+		E009038823DB9F3200E886E5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009038723DB9F3200E886E5 /* AppCoordinator.swift */; };
+		E009038A23DBA09700E886E5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009038923DBA09700E886E5 /* NetworkService.swift */; };
+		E009038D23DBA0D200E886E5 /* NetworkiResourceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009038C23DBA0D200E886E5 /* NetworkiResourceResponse.swift */; };
+		E009038F23DBA0F600E886E5 /* APIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009038E23DBA0F600E886E5 /* APIConnection.swift */; };
+		E009039123DBA17400E886E5 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009039023DBA17400E886E5 /* ApiRequest.swift */; };
+		E009039523DBAD1B00E886E5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009039423DBAD1B00E886E5 /* BaseViewModel.swift */; };
+		E009039823DBB08900E886E5 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009039723DBB08900E886E5 /* BaseCoordinator.swift */; };
+		E009039C23DC68B300E886E5 /* RepositoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009039A23DC68B300E886E5 /* RepositoryCollectionViewCell.swift */; };
+		E009039D23DC68B300E886E5 /* RepositoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E009039B23DC68B300E886E5 /* RepositoryCollectionViewCell.xib */; };
+		E00903A023DCA75800E886E5 /* EXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009039F23DCA75800E886E5 /* EXNavigationController.swift */; };
+		E00903A223DCA79000E886E5 /* EXColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00903A123DCA79000E886E5 /* EXColor.swift */; };
+		E00903AA23DCAA9A00E886E5 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A823DCAA8C00E886E5 /* Roboto-Black.ttf */; };
+		E00903AB23DCAA9A00E886E5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A423DCAA8C00E886E5 /* Roboto-Bold.ttf */; };
+		E00903AC23DCAA9A00E886E5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A923DCAA8C00E886E5 /* Roboto-Light.ttf */; };
+		E00903AD23DCAA9A00E886E5 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A523DCAA8C00E886E5 /* Roboto-Medium.ttf */; };
+		E00903AE23DCAA9A00E886E5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A723DCAA8C00E886E5 /* Roboto-Regular.ttf */; };
+		E00903AF23DCAA9A00E886E5 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A623DCAA8C00E886E5 /* Roboto-Thin.ttf */; };
+		E00903B123DCC52800E886E5 /* EXDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00903B023DCC52800E886E5 /* EXDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +71,6 @@
 		E009033F23DB7E7500E886E5 /* modalTeste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = modalTeste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E009034223DB7E7500E886E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E009034423DB7E7500E886E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E009034623DB7E7500E886E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E009034923DB7E7500E886E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E009034B23DB7E7700E886E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E009034E23DB7E7700E886E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E009035023DB7E7700E886E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +80,29 @@
 		E009036023DB7E7800E886E5 /* modalTesteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modalTesteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E009036423DB7E7800E886E5 /* modalTesteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modalTesteUITests.swift; sourceTree = "<group>"; };
 		E009036623DB7E7800E886E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E009037923DB9C0E00E886E5 /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
+		E009037A23DB9C0E00E886E5 /* HomeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListViewController.xib; sourceTree = "<group>"; };
+		E009037D23DB9C2400E886E5 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
+		E009037F23DB9C3000E886E5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E009038123DB9C4E00E886E5 /* HomeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCoordinator.swift; sourceTree = "<group>"; };
+		E009038723DB9F3200E886E5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E009038923DBA09700E886E5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E009038C23DBA0D200E886E5 /* NetworkiResourceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkiResourceResponse.swift; sourceTree = "<group>"; };
+		E009038E23DBA0F600E886E5 /* APIConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnection.swift; sourceTree = "<group>"; };
+		E009039023DBA17400E886E5 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		E009039423DBAD1B00E886E5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E009039723DBB08900E886E5 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		E009039A23DC68B300E886E5 /* RepositoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		E009039B23DC68B300E886E5 /* RepositoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		E009039F23DCA75800E886E5 /* EXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXNavigationController.swift; sourceTree = "<group>"; };
+		E00903A123DCA79000E886E5 /* EXColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXColor.swift; sourceTree = "<group>"; };
+		E00903A423DCAA8C00E886E5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		E00903A523DCAA8C00E886E5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E00903A623DCAA8C00E886E5 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		E00903A723DCAA8C00E886E5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E00903A823DCAA8C00E886E5 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		E00903A923DCAA8C00E886E5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		E00903B023DCC52800E886E5 /* EXDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +143,6 @@
 				AD44638B5FB84B1EDBA21DFB /* Pods-modalTesteTests.debug.xcconfig */,
 				2FA37B19AB90101A233F9CDC /* Pods-modalTesteTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,12 +181,12 @@
 		E009034123DB7E7500E886E5 /* modalTeste */ = {
 			isa = PBXGroup;
 			children = (
-				E009034223DB7E7500E886E5 /* AppDelegate.swift */,
-				E009034423DB7E7500E886E5 /* SceneDelegate.swift */,
-				E009034623DB7E7500E886E5 /* ViewController.swift */,
-				E009034823DB7E7500E886E5 /* Main.storyboard */,
-				E009034B23DB7E7700E886E5 /* Assets.xcassets */,
-				E009034D23DB7E7700E886E5 /* LaunchScreen.storyboard */,
+				E009037323DB980A00E886E5 /* Application */,
+				E009039623DBAEB900E886E5 /* Scenes */,
+				E009039223DBACFB00E886E5 /* Commum */,
+				E009038323DB9D4700E886E5 /* Assets */,
+				E009037623DB9B7800E886E5 /* Models */,
+				E009037223DB97A200E886E5 /* Network */,
 				E009035023DB7E7700E886E5 /* Info.plist */,
 			);
 			path = modalTeste;
@@ -167,6 +208,155 @@
 				E009036623DB7E7800E886E5 /* Info.plist */,
 			);
 			path = modalTesteUITests;
+			sourceTree = "<group>";
+		};
+		E009037223DB97A200E886E5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E009039023DBA17400E886E5 /* ApiRequest.swift */,
+				E009038E23DBA0F600E886E5 /* APIConnection.swift */,
+				E009038923DBA09700E886E5 /* NetworkService.swift */,
+				E009038B23DBA0AF00E886E5 /* NetworkingRessourceResponse */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E009037323DB980A00E886E5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E009038423DB9E2700E886E5 /* Coordinator */,
+				E009034223DB7E7500E886E5 /* AppDelegate.swift */,
+				E009034423DB7E7500E886E5 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E009037423DB9B6200E886E5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E009037823DB9BF300E886E5 /* Controller */,
+				E009037723DB9B7E00E886E5 /* ViewModel */,
+				E009037523DB9B6E00E886E5 /* Coordinator */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E009037523DB9B6E00E886E5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E009038123DB9C4E00E886E5 /* HomeListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E009037623DB9B7800E886E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E009037F23DB9C3000E886E5 /* Repository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E009037723DB9B7E00E886E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E009037D23DB9C2400E886E5 /* HomeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E009037823DB9BF300E886E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E009039923DC689800E886E5 /* RepositoryCell */,
+				E009037923DB9C0E00E886E5 /* HomeListViewController.swift */,
+				E009037A23DB9C0E00E886E5 /* HomeListViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E009038323DB9D4700E886E5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E00903A323DCAA6B00E886E5 /* Fonts */,
+				E009034B23DB7E7700E886E5 /* Assets.xcassets */,
+				E009034D23DB7E7700E886E5 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E009038423DB9E2700E886E5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E009038723DB9F3200E886E5 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E009038B23DBA0AF00E886E5 /* NetworkingRessourceResponse */ = {
+			isa = PBXGroup;
+			children = (
+				E009038C23DBA0D200E886E5 /* NetworkiResourceResponse.swift */,
+			);
+			path = NetworkingRessourceResponse;
+			sourceTree = "<group>";
+		};
+		E009039223DBACFB00E886E5 /* Commum */ = {
+			isa = PBXGroup;
+			children = (
+				E009039E23DCA74400E886E5 /* Extesions */,
+				E009039323DBAD0600E886E5 /* Base */,
+			);
+			path = Commum;
+			sourceTree = "<group>";
+		};
+		E009039323DBAD0600E886E5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E009039423DBAD1B00E886E5 /* BaseViewModel.swift */,
+				E009039723DBB08900E886E5 /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E009039623DBAEB900E886E5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E009037423DB9B6200E886E5 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E009039923DC689800E886E5 /* RepositoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				E009039A23DC68B300E886E5 /* RepositoryCollectionViewCell.swift */,
+				E009039B23DC68B300E886E5 /* RepositoryCollectionViewCell.xib */,
+			);
+			path = RepositoryCell;
+			sourceTree = "<group>";
+		};
+		E009039E23DCA74400E886E5 /* Extesions */ = {
+			isa = PBXGroup;
+			children = (
+				E009039F23DCA75800E886E5 /* EXNavigationController.swift */,
+				E00903A123DCA79000E886E5 /* EXColor.swift */,
+				E00903B023DCC52800E886E5 /* EXDate.swift */,
+			);
+			path = Extesions;
+			sourceTree = "<group>";
+		};
+		E00903A323DCAA6B00E886E5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E00903A823DCAA8C00E886E5 /* Roboto-Black.ttf */,
+				E00903A423DCAA8C00E886E5 /* Roboto-Bold.ttf */,
+				E00903A923DCAA8C00E886E5 /* Roboto-Light.ttf */,
+				E00903A523DCAA8C00E886E5 /* Roboto-Medium.ttf */,
+				E00903A723DCAA8C00E886E5 /* Roboto-Regular.ttf */,
+				E00903A623DCAA8C00E886E5 /* Roboto-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,9 +468,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00903AD23DCAA9A00E886E5 /* Roboto-Medium.ttf in Resources */,
+				E009039D23DC68B300E886E5 /* RepositoryCollectionViewCell.xib in Resources */,
+				E009037C23DB9C0E00E886E5 /* HomeListViewController.xib in Resources */,
+				E00903AB23DCAA9A00E886E5 /* Roboto-Bold.ttf in Resources */,
+				E00903AA23DCAA9A00E886E5 /* Roboto-Black.ttf in Resources */,
+				E00903AC23DCAA9A00E886E5 /* Roboto-Light.ttf in Resources */,
+				E00903AE23DCAA9A00E886E5 /* Roboto-Regular.ttf in Resources */,
 				E009034F23DB7E7700E886E5 /* LaunchScreen.storyboard in Resources */,
+				E00903AF23DCAA9A00E886E5 /* Roboto-Thin.ttf in Resources */,
 				E009034C23DB7E7700E886E5 /* Assets.xcassets in Resources */,
-				E009034A23DB7E7500E886E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +605,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E009034723DB7E7500E886E5 /* ViewController.swift in Sources */,
+				E009038F23DBA0F600E886E5 /* APIConnection.swift in Sources */,
 				E009034323DB7E7500E886E5 /* AppDelegate.swift in Sources */,
+				E009039823DBB08900E886E5 /* BaseCoordinator.swift in Sources */,
+				E009038223DB9C4E00E886E5 /* HomeListCoordinator.swift in Sources */,
+				E00903A223DCA79000E886E5 /* EXColor.swift in Sources */,
+				E009037B23DB9C0E00E886E5 /* HomeListViewController.swift in Sources */,
+				E009038A23DBA09700E886E5 /* NetworkService.swift in Sources */,
+				E009038023DB9C3000E886E5 /* Repository.swift in Sources */,
+				E009039123DBA17400E886E5 /* ApiRequest.swift in Sources */,
+				E009039523DBAD1B00E886E5 /* BaseViewModel.swift in Sources */,
+				E009038823DB9F3200E886E5 /* AppCoordinator.swift in Sources */,
+				E009039C23DC68B300E886E5 /* RepositoryCollectionViewCell.swift in Sources */,
 				E009034523DB7E7500E886E5 /* SceneDelegate.swift in Sources */,
+				E009038D23DBA0D200E886E5 /* NetworkiResourceResponse.swift in Sources */,
+				E00903B123DCC52800E886E5 /* EXDate.swift in Sources */,
+				E00903A023DCA75800E886E5 /* EXNavigationController.swift in Sources */,
+				E009037E23DB9C2400E886E5 /* HomeListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +657,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E009034823DB7E7500E886E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E009034923DB7E7500E886E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E009034D23DB7E7700E886E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -594,7 +797,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WoodProject.modalTeste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -613,7 +816,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WoodProject.modalTeste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
