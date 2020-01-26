@@ -23,4 +23,12 @@ struct NetworkService {
           .map { $0! }
           .flatMap(resource.parse)
     }
+    
+    func showImageForUrl(url: String) -> Observable<UIImage?> {
+        return RxAlamofire
+            .requestData(.get, url)
+            .map({ (response,data) -> UIImage? in
+                return UIImage(data: data)
+            })
+    }
 }

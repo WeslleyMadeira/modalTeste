@@ -40,6 +40,7 @@
 		E00903AF23DCAA9A00E886E5 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E00903A623DCAA8C00E886E5 /* Roboto-Thin.ttf */; };
 		E00903B123DCC52800E886E5 /* EXDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00903B023DCC52800E886E5 /* EXDate.swift */; };
 		E00903B323DCD8D100E886E5 /* EXInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00903B223DCD8D100E886E5 /* EXInt.swift */; };
+		E00903B523DE236000E886E5 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00903B423DE236000E886E5 /* Owner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		E00903A923DCAA8C00E886E5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		E00903B023DCC52800E886E5 /* EXDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXDate.swift; sourceTree = "<group>"; };
 		E00903B223DCD8D100E886E5 /* EXInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXInt.swift; sourceTree = "<group>"; };
+		E00903B423DE236000E886E5 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				E009037F23DB9C3000E886E5 /* Repository.swift */,
+				E00903B423DE236000E886E5 /* Owner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00903B523DE236000E886E5 /* Owner.swift in Sources */,
 				E009038F23DBA0F600E886E5 /* APIConnection.swift in Sources */,
 				E009034323DB7E7500E886E5 /* AppDelegate.swift in Sources */,
 				E009039823DBB08900E886E5 /* BaseCoordinator.swift in Sources */,

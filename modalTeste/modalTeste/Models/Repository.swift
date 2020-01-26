@@ -8,8 +8,8 @@
 
 import Foundation
 
-
 struct Repository: Codable {
+    
     let id: Int
     let fullName: String
     let description: String
@@ -17,6 +17,7 @@ struct Repository: Codable {
     let watchersCount: Int
     let url: URL
     let creatAt: String
+    let owner: Owner
 
     private enum CodingKeys: String, CodingKey {
         case id
@@ -26,6 +27,7 @@ struct Repository: Codable {
         case url = "html_url"
         case watchersCount = "watchers_count"
         case creatAt = "created_at"
+        case owner
     }
 
 }

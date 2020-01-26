@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class RepositoryCollectionViewCell: UICollectionViewCell {
     
@@ -15,21 +16,34 @@ class RepositoryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelCountStar: UILabel!
     
     @IBOutlet weak var labelWatchers: UILabel!
+    @IBOutlet weak var labelWatchersFirst: UILabel!
     @IBOutlet weak var labelQTDDays: UILabel!
+    
+    @IBOutlet weak var imageRepository: UIImageView!
     
     @IBOutlet weak var viewBackgroundCell: UIView!
     @IBOutlet weak var viewBar: UIView!
     
+    var disposeBag = DisposeBag()
+    
+    override func prepareForReuse() {
+        self.imageRepository.image = UIImage()
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
     func bindData(repository: Repository, index: Int) {
+        labelWatchersFirst.text = repository.watchersCount.formatnumber()
         labelNameRepository.text = repository.fullName.uppercased()
         labelCountStar.text = repository.stargazersCount.formatnumber()
         labelWatchers.text = repository.watchersCount.formatnumber()
         labelQTDDays.text = "\(Date.dateToNumberDays(date: repository.creatAt).formatnumber()) dias"
+        
+        if let urlString = repository.owner.avatarImage , let _ = URL(string: urlString) {
+            NetworkService().showImageForUrl(url: urlString).bind(to: imageRepository.rx.image).disposed(by: disposeBag)
+        }
         
         self.setColorByIndex(at: index)
     }

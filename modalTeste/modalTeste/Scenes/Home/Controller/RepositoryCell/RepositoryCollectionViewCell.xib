@@ -102,7 +102,7 @@
                                     <constraint firstItem="7Ty-q9-5FY" firstAttribute="centerY" secondItem="c4V-6I-gRM" secondAttribute="centerY" id="vCE-gv-IdC"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tKK-Vi-g9n">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tKK-Vi-g9n">
                                 <rect key="frame" x="24" y="44" width="36" height="32"/>
                                 <color key="backgroundColor" name="color_green_app"/>
                                 <constraints>
@@ -159,11 +159,13 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="333" height="140"/>
             <connections>
+                <outlet property="imageRepository" destination="tKK-Vi-g9n" id="XPF-99-xUn"/>
                 <outlet property="labelCountStar" destination="0bn-ad-ll6" id="hyR-Qg-yDD"/>
                 <outlet property="labelNameRepository" destination="lly-RN-Ily" id="wFV-rG-B2a"/>
                 <outlet property="labelQTDDays" destination="5Tj-Sp-i23" id="UVC-BZ-F1n"/>
                 <outlet property="labelTitleAllStar" destination="fa5-15-HZ0" id="Jad-na-Gcn"/>
                 <outlet property="labelWatchers" destination="1oJ-il-SMV" id="13U-ct-8Ak"/>
+                <outlet property="labelWatchersFirst" destination="uVD-zP-GW5" id="XtD-jy-VWZ"/>
                 <outlet property="viewBackgroundCell" destination="20U-fv-BQ1" id="zDY-c3-YeR"/>
                 <outlet property="viewBar" destination="c4V-6I-gRM" id="tXg-Kp-H2I"/>
             </connections>
